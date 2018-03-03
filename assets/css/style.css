@@ -1,0 +1,128 @@
+body {
+    background-image: url('../images/light-veneer.png');
+}
+
+h1 {
+    color        : navy;
+    font-size    : 2.8em;
+    font-weight  : bold;
+    text-align   : center;
+
+}
+
+.page {
+    display: none;
+}
+
+h2, .category {
+    color         : navy;
+    font-size     : 1.5em;
+    font-weight   : bold;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear  : both;
+}
+
+.page_prev, .page_next {
+    background-color: var(--color-light-blue);
+    color           : var(--color-text-contrast);
+    font-size       : 1.15em;
+    font-weight     : bold;
+    letter-spacing  : 0.03em;
+    text-align      : center;
+
+    margin-top      : 4.5%;
+    border          : 5px solid var(--color-dark-blue);
+    padding         : 3% 6%;
+}
+
+.page_prev {
+    float: left;
+}
+
+.page_next {
+    float: right;
+}
+
+#quizForm {
+    position: relative;
+}
+
+#question, #answer {
+    width: 80%;
+}
+
+.container_fixed {
+    position: absolute;
+    top     : 0;
+    right   : 15%;
+}
+
+#timer {
+    animation     : spin 0.50s cubic-bezier(.15, .07, .20, .97) both;
+    font-size     : 2.25em;
+    font-weight   : bold;
+    text-align    : center;
+
+    position      : fixed;
+    width         : 1.6em;
+    margin-top    : 0.2em;
+    border        : 0.09em solid var(--color-text-highlight);
+    border-radius : 4px;
+    padding-top   : 0.25em;
+    padding-bottom: 0.25em;
+}
+
+.category {
+    margin-bottom: 0.5em;
+    border-bottom: 4px double black;
+}
+
+.prompt {
+    margin       : 0.8em 0;
+    padding      : 0.5em;
+    border-bottom: 4px double black;
+}
+
+.choices {
+    line-height  : 1.4em;
+    margin       : 0.2em 0;
+    padding      : 0.6em 0.5em;
+    border-radius: 0.2em;
+}
+
+.choices:hover {
+    background-color: var(--color-light-blue);
+    color           : var(--color-text-contrast);
+}
+
+.color-chocolate {
+    background-color: chocolate
+}
+
+.color-wheat {
+    background-color: wheat
+}
+
+.color-wheat p{
+    color: green
+}
+
+.color-green{
+    background-color:green
+}
+
+.color-cyan {
+    background-color:cyan
+}
+
+.color-royalblue {
+    background-color: royalblue
+}
+
+.color-royalblue h2, .color-royalblue p{
+    color: white
+}
